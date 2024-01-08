@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 15% 4rem 15%;
+  width: 100%;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+.web_ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: end;
+  max-width: 75%;
+  margin: auto;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+/* footer */
+
+footer {
+  margin-top: 2rem;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: end;
+  margin: 1rem;
+  padding: 0 0.5rem 0.5rem 0;
+}
+
+/* forside */
+
+#start {
+  padding-top: 4rem;
+  height: 100vh;
+}
+#start img {
+  width: 40%;
+}
+
+.info_1,
+.info_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.info_2 {
+  text-align: left;
+  padding: 0 4rem 0 0;
+}
+.om .knap_2 {
+  margin: 0;
+}
+.om img {
+  max-width: 40%;
+  height: 40%;
+}
+
+#projekter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+
+#projekt_container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto;
+  padding: 2rem;
+}
+#projekt_container img {
+  width: 30rem;
+}
+
+/* portfolio */
+
+#portfolio img {
+  width: 50%;
+  height: 50%;
+}
+#portfolio h2 {
+  padding: 4.5rem 0 2rem 0;
+  text-align: center;
+}
+.section_1 div {
+  padding-right: 2rem;
+}
+
+/* CV */
+
+#portrat {
+  width: 30%;
+  height: 30%;
+}
+
+#cv section {
+  padding: 8rem 15% 4rem 15%;
+}
+
+.info_3 {
+  padding-left: 3rem;
+}
+.info_3 p {
+  padding-top: 2rem;
+}
+
+#mit_cv {
+  width: 100%;
+  padding: 5rem 15% 5rem 15%;
+}
+
+/* mobile */
+
+@media (max-width: 900px) {
+  .web {
+    display: none;
+  }
+
+  .layout:not(#start) {
+    padding: 4rem 10% 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #forside .layout:first-of-type {
+    padding: 4rem 0 0 0;
+  }
+
+  /* header */
+
+  .web_ul {
+    display: none;
+  }
+
+  /* forside */
+
+  #start img {
+    width: 45%;
+    height: 45%;
+    margin: 2rem auto 2rem auto;
+  }
+  #start {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+
+  .info_1,
+  .info_2 {
+    padding-left: 0;
+  }
+
+  .info_2 {
+    padding: 0 0 2rem 0;
+  }
+  .om img {
+    max-width: 80%;
+    height: 80%;
+  }
+
+  #projekt_container img {
+    width: 22rem;
+  }
+
+  /* portfolio */
+
+  #portfolio .info_1 {
+    padding-bottom: 2rem;
+  }
+
+  #portfolio img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .section_1 div {
+    padding-right: 0;
+  }
+  .section_2 {
+    flex-direction: column-reverse !important;
+  }
+
+  /* CV */
+
+  #portrat {
+    width: 80%;
+    padding-top: 2rem;
+  }
+  #cv section {
+    flex-direction: column-reverse !important;
+    padding: 8rem 15% 4rem 15%;
+  }
+  .info_3 {
+    padding: 2rem 0 0 0;
+  }
+
+  #mit_cv {
+    padding: 5rem 10% 5rem 10%;
+  }
+}
+
+/* burgermenu */
+
+.hamburger {
+  background: none;
+  cursor: pointer;
+  border: none;
+  margin: 1rem 2rem 0.5rem 0;
+  float: right;
+}
+.menu {
+  position: fixed;
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 4.7rem;
+  z-index: 98;
+  width: 100%;
+  height: 90%;
+}
+.menu_item {
+  padding: 1rem 2rem 2rem 0;
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (min-width: 901px) {
+  .menu,
+  .mobile {
+    display: none;
+  }
+}

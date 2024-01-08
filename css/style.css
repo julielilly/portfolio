@@ -1,0 +1,160 @@
+:root {
+  --white: #ffffff;
+  --yellow: #fffbdb;
+  --orange: #da7422;
+  --purble: #ac92a6;
+  --brown: #563635;
+  --dark-brown: #261817;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  color: var(--brown);
+  font-size: 4rem;
+  line-height: 4rem;
+}
+h2 {
+  font-family: "Oxygen", sans-serif;
+  color: var(--brown);
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Oxygen", sans-serif;
+  color: var(--brown);
+  font-size: 2rem;
+}
+p {
+  font-family: "Heebo", sans-serif;
+  color: var(--dark-brown);
+}
+a {
+  font-family: "Heebo", sans-serif;
+  color: var(--brown);
+}
+a:hover {
+  color: var(--purble);
+}
+
+.knap_1,
+.knap_2 {
+  width: fit-content;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: transparent 0.2rem solid;
+  border-radius: 3rem;
+  margin: 0 auto 0 auto;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+.knap_1 {
+  background-color: var(--orange);
+}
+.knap_1:hover {
+  background-color: transparent;
+  color: var(--brown);
+  border: var(--orange) 0.2rem solid;
+}
+.knap_2 {
+  background-color: var(--brown);
+}
+.knap_2:hover {
+  background-color: transparent;
+  color: var(--brown);
+  border: var(--brown) 0.2rem solid;
+}
+
+/* header */
+
+header {
+  background-color: var(--yellow);
+}
+
+ul li a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+/* footer */
+
+#linkedin_logo,
+#github_logo {
+  display: block;
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+}
+#linkedin_logo {
+  background-image: url("../img/linkedin_1.svg");
+}
+#linkedin_logo:hover {
+  background-image: url("../img/linkedin_2.svg");
+}
+#github_logo {
+  background-image: url("../img/github_1.svg");
+}
+#github_logo:hover {
+  background-image: url("../img/github_2.svg");
+}
+
+/* forside, portfolio */
+
+#start,
+#projekter,
+#portfolio h2,
+.section_2,
+#cv section {
+  background-color: var(--yellow);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  /* header */
+
+  header {
+    background-color: var(--yellow);
+  }
+
+  ul li a {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+}
+
+/* burgermenu */
+
+.mobile i {
+  color: var(--brown);
+  font-size: 3rem;
+}
+.menu {
+  list-style: none;
+  background-color: var(--yellow);
+  border-top: solid var(--brown) 2px;
+  border-bottom: solid var(--brown) 2px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: rgb(255, 255, 255, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(38, 24, 23, 0.5);
+  border-radius: 10px;
+}
